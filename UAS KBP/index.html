@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Support Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>LearnMate</h1>
+    <p>"Stay focused and conquer your goals!"</p>
+  </header>
+
+  <!-- Container utama untuk layout -->
+  <div class="layout">
+    <!-- To-Do List -->
+    <div class="todo-container">
+      <h2>To-Do List</h2>
+      <input type="text" id="task-input" placeholder="Add a new task..." />
+      <button id="add-task">Add Task</button>
+      <ul id="tasks"></ul>
+    </div>
+    
+    <!-- Pomodoro Timer -->
+    <div class="pomodoro-container">
+      <h2>Pomodoro Timer</h2>
+      <div id="timer-container">
+        <span>Work (minutes):</span>
+        <input type="number" id="work-time" value="25" min="1" />
+        <span>Break (minutes):</span>
+        <input type="number" id="break-time" value="5" min="1" />
+      </div>
+      <div id="timer-display">25:00</div>
+      <div>
+        <button id="start-timer">Start</button>
+        <button id="pause-timer">Pause</button>
+        <button id="reset-timer">Reset</button>
+      </div>
+    </div>
+    
+    <!-- Spotify Player -->
+    <div class="spotify-container">
+      <h3>Focus Music Playlist</h3>
+      <iframe 
+        src="https://open.spotify.com/embed/album/4LSrRyDCKPsjPBWCitP6Ld"
+        width="100%" 
+        height="380" 
+        frameborder="0" 
+        allowtransparency="true" 
+        allow="encrypted-media">
+      </iframe>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 LearnMate</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
